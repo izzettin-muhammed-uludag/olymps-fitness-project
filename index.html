@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OLYMPS FITNESS | Achieve Your Fitness Goals</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+     <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top olympsfitness-nav">
+        <div class="container-fluid px-4 px-lg-5">
+          <a class="navbar-brand" href="#home">
+            <div class="logo-box">
+              <img src="assets/img/olympslogo.webp" loading="lazy" alt="OLYMPS FITNESS Logo" onerror="this.style.display = 'none'; this.nextElementSibling.style.display = 'flex';" />
+              <div style="display: none; width: 100%; height: 100%; background: var(--accent-red); align-items: center; justify-content: center;">
+                <i class="custom-icon" style="-webkit-mask-image: url('assets/icons/dumbbell.svg'); mask-image: url('assets/icons/dumbbell.svg');"></i>
+              </div>
+            </div>
+            <span data-i18n="siteName">OLYMPS FITNESS</span>
+          </a>
+          <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link olympsfitness-nav__link olympsfitness-nav__link--active" href="#home" data-i18n="navHome">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link olympsfitness-nav__link" href="#about" data-i18n="navAbout">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link olympsfitness-nav__link" href="#services" data-i18n="navServices">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link olympsfitness-nav__link" href="#plans" data-i18n="navPlans">Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link olympsfitness-nav__link" href="#trainers" data-i18n="navTrainers">Trainers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link olympsfitness-nav__link" href="#blog" data-i18n="navBlog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link olympsfitness-nav__link" href="#contact" data-i18n="navContact">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <div class="lang-switcher">
+                <span class="lang-switcher__option lang-switcher__option--active" data-lang="en" aria-label="English">EN</span>
+                <span class="lang-switcher__separator">|</span>
+                <span class="lang-switcher__option" data-lang="tr" aria-label="Türkçe">TR</span>
+              </div>
+              <button class="btn olympsfitness-nav__btn-signup">
+                <span data-i18n="btnSignUp">Sign Up</span>
+              </button>
+              <button class="btn olympsfitness-nav__btn-login">
+                <span data-i18n="btnLogin">Login</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
