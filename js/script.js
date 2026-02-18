@@ -121,3 +121,26 @@ AOS.init({
   easing: "ease-out-cubic",
   delay: 0,
 });
+
+
+document.querySelectorAll(".plan-tabs__tab").forEach(function (tab) {
+  tab.addEventListener("click", function () {
+    
+    document.querySelectorAll(".plan-tabs__tab").forEach(function (t) {
+      t.classList.remove("plan-tabs__tab--active");
+    });
+    
+    this.classList.add("plan-tabs__tab--active");
+  });
+});
+
+
+document.querySelectorAll(".plan-tabs__tab").forEach(function (tab) {
+  tab.addEventListener("click", function () {
+    
+    document.querySelectorAll(".plan-tabs__tab").forEach(function (t) {
+      t.classList.remove("plan-tabs__tab--active");
+    });
+    this.classList.add("plan-tabs__tab--active");
+  });
+});
