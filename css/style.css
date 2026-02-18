@@ -541,7 +541,6 @@ footer,
   transform: translateX(5px);
 }
 
-
 .plan-tabs {
   display: flex;
   gap: 0;
@@ -591,7 +590,6 @@ footer,
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(230, 57, 70, 0.3);
 }
-
 
 .plan-card--featured {
   border-color: var(--accent-red);
@@ -670,4 +668,62 @@ footer,
 
 .plan-card--featured .plan-card__btn-save:hover {
   background: var(--accent-red-dark);
+}
+
+.tool-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tool-card:hover {
+  border-color: var(--border-red);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(230, 57, 70, 0.2);
+}
+
+.tool-card__icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(230, 57, 70, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--accent-red);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover .tool-card__icon {
+  background: var(--accent-red);
+  color: #fff;
+  transform: rotate(360deg) scale(1.1);
+}
+
+.tool-card__title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.tool-card__link {
+  color: var(--accent-red);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.tool-card__link:hover {
+  color: #fff;
 }
