@@ -727,3 +727,62 @@ footer,
 .tool-card__link:hover {
   color: #fff;
 }
+
+
+
+.testimonial-section {
+  background: var(--bg-card);
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-red-dark) 100%);
+  border-radius: 8px;
+  padding: 2.5rem;
+  position: relative;
+}
+
+.testimonial-card__quote-icon {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card__text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #fff;
+}
+
+.testimonial-card__name {
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.testimonial-card__role {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.testimonial-card__avatars {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.testimonial-card__avatars img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-red);
+  cursor: pointer;
+}
+
+.testimonial-card__nav {
+  color: var(--accent-red);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
