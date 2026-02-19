@@ -786,3 +786,69 @@ footer,
   font-size: 1.25rem;
   cursor: pointer;
 }
+
+
+
+.trainer-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 100%;
+}
+
+.trainer-card:hover {
+  border-color: var(--border-red);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(230, 57, 70, 0.2);
+}
+
+.trainer-card__img {
+  height: 280px;
+  object-fit: cover;
+  filter: grayscale(40%);
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.trainer-card:hover .trainer-card__img {
+  transform: scale(1.08);
+  filter: grayscale(0%);
+}
+
+.trainer-card__body {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.trainer-card__name {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.trainer-card__role {
+  font-size: 0.85rem;
+  color: var(--accent-red);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.trainer-card__link {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.3s ease;
+}
+
+.trainer-card__link:hover {
+  color: #fff;
+}
