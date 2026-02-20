@@ -144,3 +144,42 @@ document.querySelectorAll(".plan-tabs__tab").forEach(function (tab) {
     this.classList.add("plan-tabs__tab--active");
   });
 });
+
+
+document.querySelectorAll(".faq-list__question").forEach(function (question) {
+  question.addEventListener("click", function () {
+    var parentItem = this.parentElement;
+    var isOpen = parentItem.classList.contains("faq-list__item--open");
+    
+    
+    document.querySelectorAll(".faq-list__item").forEach(function (item) {
+      item.classList.remove("faq-list__item--open");
+    });
+
+    if (!isOpen) {
+      parentItem.classList.add("faq-list__item--open");
+    }
+  });
+});
+
+
+var authTabs = document.querySelectorAll(".auth-card__tab");
+var nameField = document.getElementById("nameField");
+var submitBtn = document.getElementById("submitBtn");
+
+authTabs.forEach(function (tab, index) {
+  tab.addEventListener("click", function () {
+    
+    authTabs.forEach(function (t) { t.classList.remove("auth-card__tab--active"); });
+    this.classList.add("auth-card__tab--active");
+
+    
+    if (index === 1) {
+      nameField.style.display = "none";
+      submitBtn.textContent = "Login";
+    } else {
+      nameField.style.display = "block";
+      submitBtn.textContent = "Sign Up";
+    }
+  });
+});
